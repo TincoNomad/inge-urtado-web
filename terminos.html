@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos y Condiciones — Jorge Hurtado</title>
+  <meta name="description" content="Términos y Condiciones de uso del sitio web de Jorge Hurtado, Ingeniero Civil Senior.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">JH.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="index.html#experiencia">Experiencia</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="legal-page">
+    <div class="legal-container">
+      <a href="index.html" class="legal-back">← Volver al Inicio</a>
+
+      <h1 class="legal-title">Términos y Condiciones</h1>
+      <div class="legal-updated">Última actualización: 30 de junio de 2026</div>
+
+      <div class="legal-content">
+        <h2>1. Aceptación de los Términos</h2>
+        <p>Al acceder y utilizar el sitio web de <strong>Jorge Hurtado — Ingeniería Civil</strong>, el usuario acepta estar sujeto a los presentes Términos y Condiciones. Si no está de acuerdo con alguno de estos términos, le rogamos no utilizar nuestra plataforma.</p>
+
+        <h2>2. Naturaleza de los Servicios</h2>
+        <p><strong>Jorge Hurtado</strong> se dedica a la prestación de servicios de ingeniería civil, diseño estructural, consultoría técnica, supervisión de obras, peritajes y asesoría en proyectos de construcción. Los servicios se prestan bajo las condiciones específicas acordadas en cada contrato o cotización.</p>
+
+        <h2>3. Propiedad Intelectual y Restricciones de Uso</h2>
+        <p>Todos los materiales, código fuente, documentación, guías y productos digitales adquiridos a través de esta web son para <strong>uso personal y/o profesional exclusivo del comprador</strong>. Queda estrictamente prohibida la reventa, distribución, reproducción masiva, alteración o comercialización de los archivos bajo cualquier medio sin el consentimiento expreso y por escrito de <strong>Jorge Hurtado</strong>.</p>
+
+        <h2>4. Propiedad Intelectual de Planos y Diseños</h2>
+        <p>Salvo acuerdo específico por escrito, todos los planos, diseños estructurales y cálculos desarrollados bajo contrato pertenecen al cliente una vez completado el pago íntegro del acuerdo comercial. Jorge Hurtado se reserva el derecho de referenciar los proyectos realizados en su portafolio, salvo que el cliente solicite expresamente lo contrario.</p>
+
+        <h2>5. Exención de Responsabilidad</h2>
+        <p>Los planos, diseños, cálculos y dictámenes proporcionados a través de este sitio web se ofrecen como servicios profesionales bajo estrictos estándares técnicos. El uso práctico de la información es responsabilidad exclusiva del profesional o la organización que lo implementa, quien debe verificar que los diseños cumplan con las condiciones específicas del terreno y la normativa vigente.</p>
+
+        <h2>6. Limitación de Responsabilidad</h2>
+        <p>En ningún caso Jorge Hurtado será responsable por daños indirectos, incidentales, especiales o consecuentes que resulten del uso de los servicios o planos adquiridos. La supervisión y verificación de la ejecución de obra es responsabilidad del titular del proyecto y del residente de obra designado.</p>
+
+        <h2>7. Disponibilidad del Servicio</h2>
+        <p>Los plazos de entrega de planos, diseños y dictámenes se establecen en cada acuerdo comercial. Nos reservamos el derecho de ajustar plazos ante circunstancias imprevisibles, comunicándolo al cliente de manera oportuna.</p>
+
+        <h2>8. Modificaciones</h2>
+        <p>Nos reservamos el derecho de modificar o actualizar estos Términos y Condiciones en cualquier momento, siendo efectivos desde el momento de su publicación en este sitio web.</p>
+
+        <h2>9. Ley Aplicable y Jurisdicción</h2>
+        <p>Estos Términos y Condiciones se rigen por las leyes de la República del Perú. Cualquier controversia será sometida a la jurisdicción de los tribunales competentes de Lima, Perú.</p>
+
+        <h2>10. Contacto</h2>
+        <p>Si tiene preguntas sobre estos Términos y Condiciones, puede contactarnos a través de <strong>legal@jorgehurtado.dev</strong>.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Jorge Hurtado. Todos los derechos reservados.</div>
+        <div class="footer-legal">
+          <a href="privacidad.html">Privacidad</a>
+          <a href="terminos.html">Términos</a>
+          <a href="reembolsos.html">Reembolsos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+  </script>
+
+</body>
+</html>

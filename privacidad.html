@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — Jorge Hurtado</title>
+  <meta name="description" content="Política de Privacidad del sitio web de Jorge Hurtado, Ingeniero Civil Senior.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">JH.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="index.html#experiencia">Experiencia</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="legal-page">
+    <div class="legal-container">
+      <a href="index.html" class="legal-back">← Volver al Inicio</a>
+
+      <h1 class="legal-title">Política de Privacidad</h1>
+      <div class="legal-updated">Última actualización: 30 de junio de 2026</div>
+
+      <div class="legal-content">
+        <h2>1. Identidad del Responsable</h2>
+        <p>El presente documento establece las Políticas de Privacidad de <strong>Jorge Hurtado — Ingeniería Civil</strong>, con domicilio en Lima, Perú, en cumplimiento con la Ley N° 29733, Ley de Protección de Datos Personales de Perú, garantizamos la seguridad y confidencialidad de la información de nuestros usuarios.</p>
+
+        <h2>2. Información que recopilamos</h2>
+        <p>Al navegar por nuestro sitio web o utilizar nuestros servicios, podemos solicitar datos como:</p>
+        <ul>
+          <li>Nombre completo</li>
+          <li>Correo electrónico</li>
+          <li>Número de teléfono (WhatsApp)</li>
+          <li>Información de facturación (cuando aplique)</li>
+        </ul>
+        <p>Asimismo, utilizamos cookies y tecnologías similares para mejorar la experiencia de usuario y medir el rendimiento de nuestro sitio.</p>
+
+        <h2>3. Uso de la Información</h2>
+        <p>Los datos recopilados son utilizados exclusivamente para:</p>
+        <ul>
+          <li>Procesar pagos y entregar los productos digitales o servicios adquiridos.</li>
+          <li>Enviar notificaciones sobre el estado de la compra o contratación.</li>
+          <li>Proveer soporte técnico o atención al cliente.</li>
+          <li>Enviar información relevante del sector de la ingeniería y construcción (con opción a darse de baja en cualquier momento).</li>
+        </ul>
+
+        <h2>4. Compartir Información</h2>
+        <p>No vendemos, alquilamos ni compartimos sus datos personales con terceros. Su información solo se comparte con las pasarelas de pago necesarias para procesar su transacción de forma segura y con herramientas de análisis web que operan bajo estrictas políticas de privacidad.</p>
+
+        <h2>5. Derechos ARCO</h2>
+        <p>Como usuario, usted tiene derecho a <strong>Acceder</strong>, <strong>Rectificar</strong>, <strong>Cancelar</strong> u <strong>Oponerse</strong> (Derechos ARCO) al uso de sus datos personales. Para ejercer estos derechos, puede enviar un correo electrónico a <strong>legal@jorgehurtado.dev</strong>.</p>
+
+        <h2>6. Seguridad de los Datos</h2>
+        <p>Implementamos medidas de seguridad técnicas y organizativas para proteger sus datos personales contra acceso no autorizado, alteración, divulgación o destrucción. Estas incluyen cifrado SSL/TLS, acceso restringido a datos y auditorías periódicas de seguridad.</p>
+
+        <h2>7. Retención de Datos</h2>
+        <p>Sus datos personales serán conservados únicamente durante el tiempo necesario para los fines para los que fueron recopilados, o según lo exijan las aplicables disposiciones legales.</p>
+
+        <h2>8. Cambios en esta Política</h2>
+        <p>Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Los cambios serán publicados en esta página y serán efectivos desde su fecha de publicación.</p>
+
+        <h2>9. Contacto</h2>
+        <p>Si tiene preguntas sobre esta Política de Privacidad, puede contactarnos a través de <strong>legal@jorgehurtado.dev</strong>.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Jorge Hurtado. Todos los derechos reservados.</div>
+        <div class="footer-legal">
+          <a href="privacidad.html">Privacidad</a>
+          <a href="terminos.html">Términos</a>
+          <a href="reembolsos.html">Reembolsos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+  </script>
+
+</body>
+</html>
