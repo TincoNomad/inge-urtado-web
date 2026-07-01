@@ -37,6 +37,7 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: justify;
 }
 
 ::selection {
@@ -378,12 +379,14 @@ body {
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
   font-size: 1rem;
+  text-align: justify;
 }
 
 .about-text p:first-of-type {
   font-size: 1.15rem;
   color: var(--text-primary);
   line-height: 1.8;
+  text-align: justify;
 }
 
 .about-highlights {
@@ -484,6 +487,7 @@ body {
   font-size: 0.9rem;
   color: var(--text-secondary);
   line-height: 1.7;
+  text-align: justify;
 }
 
 .service-tags {
@@ -572,6 +576,7 @@ body {
   color: var(--text-muted);
   max-width: 600px;
   line-height: 1.7;
+  text-align: justify;
 }
 
 /* ── SKILLS ── */
@@ -870,6 +875,7 @@ body {
   margin-bottom: 1rem;
   font-size: 0.95rem;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .legal-content ul, .legal-content ol {
@@ -985,6 +991,7 @@ body {
   color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 1.2rem;
+  text-align: justify;
 }
 
 .project-tags {
