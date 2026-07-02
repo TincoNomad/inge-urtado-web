@@ -915,6 +915,12 @@ body {
   border-color: var(--accent-dim);
 }
 
+.img-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .img-slot-label {
   font-family: var(--font-mono);
   font-size: 0.7rem;
@@ -941,11 +947,6 @@ body {
   width: 100%;
   height: 180px;
   margin-bottom: 1.5rem;
-  border: 2px dashed var(--border-light);
-}
-
-.service-img .img-slot-label {
-  font-size: 0.6rem;
 }
 
 /* Project cards */
