@@ -1,507 +1,724 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jorge Hurtado — Ingeniero Civil Senior</title>
-  <meta name="description" content="Portafolio profesional de Jorge Hurtado, Ingeniero Civil Senior. Diseño y cálculo de estructuras, supervisión de obra y gestión de proyectos de construcción.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jorge Hurtado — Ingeniero Civil Senior</title>
+    <meta
+      name="description"
+      content="Portafolio profesional de Jorge Hurtado, Ingeniero Civil Senior. Diseño y cálculo de estructuras, supervisión de obra y gestión de proyectos de construcción."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">JH.</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#sobre-mi" onclick="closeNav()">Sobre Mí</a></li>
+          <li><a href="#servicios" onclick="closeNav()">Servicios</a></li>
+          <li><a href="#proyectos" onclick="closeNav()">Proyectos</a></li>
+          <li><a href="#experiencia" onclick="closeNav()">Experiencia</a></li>
+          <li><a href="#habilidades" onclick="closeNav()">Habilidades</a></li>
+          <li><a href="#contacto" onclick="closeNav()">Contacto</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
 
-  <!-- NAVIGATION -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">JH.</a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#sobre-mi" onclick="closeNav()">Sobre Mí</a></li>
-        <li><a href="#servicios" onclick="closeNav()">Servicios</a></li>
-        <li><a href="#proyectos" onclick="closeNav()">Proyectos</a></li>
-        <li><a href="#experiencia" onclick="closeNav()">Experiencia</a></li>
-        <li><a href="#habilidades" onclick="closeNav()">Habilidades</a></li>
-        <li><a href="#contacto" onclick="closeNav()">Contacto</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Menú">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-content">
-      <div class="hero-text">
-        <div class="hero-label">Ingeniero Civil Senior</div>
-        <h1 class="hero-name">
-          Jorge<br><span class="accent">Hurtado</span>
-        </h1>
-        <p class="hero-title">
-          Más de una década diseñando estructuras seguras, eficientes y memorables. Cada viga, cada columno, cada cimiento lleva mi compromiso con la excelencia y la seguridad.
-        </p>
-        <div class="hero-meta">
-          <div class="hero-stat">
-            <div class="hero-stat-number">10+</div>
-            <div class="hero-stat-label">Años de Experiencia</div>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-label">Ingeniero Civil Senior</div>
+          <h1 class="hero-name">
+            Jorge<br /><span class="accent">Hurtado</span>
+          </h1>
+          <p class="hero-title">
+            Más de una década diseñando estructuras seguras, eficientes y
+            memorables. Cada viga, cada columno, cada cimiento lleva mi
+            compromiso con la excelencia y la seguridad.
+          </p>
+          <div class="hero-meta">
+            <div class="hero-stat">
+              <div class="hero-stat-number">10+</div>
+              <div class="hero-stat-label">Años de Experiencia</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">80+</div>
+              <div class="hero-stat-label">Proyectos Ejecutados</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">35+</div>
+              <div class="hero-stat-label">Edificaciones Diseñadas</div>
+            </div>
           </div>
-          <div class="hero-stat">
-            <div class="hero-stat-number">80+</div>
-            <div class="hero-stat-label">Proyectos Ejecutados</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-number">35+</div>
-            <div class="hero-stat-label">Edificaciones Diseñadas</div>
+          <div class="hero-cta">
+            <a href="#contacto" class="btn btn-primary">Contactar</a>
+            <a href="#proyectos" class="btn btn-outline">Ver Proyectos</a>
           </div>
         </div>
-        <div class="hero-cta">
-          <a href="#contacto" class="btn btn-primary">Contactar</a>
-          <a href="#proyectos" class="btn btn-outline">Ver Proyectos</a>
+        <div class="hero-photo">
+          <div class="img-slot hero-photo-slot" data-img="1">
+            <img
+              src="images/hero.webp"
+              alt="Jorge Hurtado — Ingeniero Civil Senior"
+            />
+          </div>
         </div>
       </div>
-      <div class="hero-photo">
-        <div class="img-slot hero-photo-slot" data-img="1">
-          <img src="images/hero.webp" alt="Jorge Hurtado — Ingeniero Civil Senior" >
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ABOUT -->
-  <section class="section" id="sobre-mi">
-    <div class="section-header fade-in">
-      <div class="section-label">Sobre Mí</div>
-      <h2 class="section-title">Ingeniería que perdura</h2>
-      <p class="section-subtitle">Cada estructura que diseño nace de una premisa: seguridad<br>sin compromisos, soluciones que resisten el tiempo.</p>
-    </div>
-    <div class="about-grid">
-      <div class="about-text fade-in">
-        <p>
-          Soy un ingeniero civil especializado en el diseño y cálculo de estructuras para edificaciones, infraestructura vial y obras de ingeniería civil. Mi carrera se ha centrado en transformar planos en realidades seguras, funcionales y estéticamente sólidas.
+    <!-- ABOUT -->
+    <section class="section" id="sobre-mi">
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <div class="section-label">Sobre Mí</div>
+          <h2 class="section-title">Ingeniería que perdura</h2>
+          <p class="section-subtitle">
+            Cada estructura que diseño nace de una premisa: seguridad<br />sin
+            compromisos, soluciones que resisten el tiempo.
+          </p>
+          <p>
+            Soy un ingeniero civil especializado en el diseño y cálculo de
+            estructuras para edificaciones, infraestructura vial y obras de
+            ingeniería civil. Mi carrera se ha centrado en transformar planos en
+            realidades seguras, funcionales y estéticamente sólidas.
+          </p>
+          <p>
+            A lo largo de mi trayectoría he participado en proyectos
+            residenciales, comerciales, industriales e infraestructura pública,
+            trabajando siempre bajo estrictos estándares de seguridad y
+            normativas vigentes. Creo firmemente que una buena estructura es
+            aquella que no se ve pero que sostiene todo con absoluta
+            confiabilidad.
+          </p>
+          <p>
+            Mi especialidad está en el diseño de estructuras de concreto armado
+            y acero, análisis sismorresistente, y optimización de materiales
+            para lograr soluciones que equilibran seguridad, economía y
+            sostenibilidad.
+          </p>
+        </div>
+        <!-- IMAGEN 2: Foto profesional del ingeniero (retrato, uniforme de obra o en oficina con planos) -->
+        <div class="about-image-wrap fade-in">
+          <div class="img-slot about-img" data-img="2">
+            <img
+              src="images/sobre-mi.webp"
+              alt="Jorge Hurtado — Ingeniero Civil"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><hr /></div>
+
+    <!-- SERVICES -->
+    <section class="section" id="servicios">
+      <div class="section-header fade-in">
+        <div class="section-label">Servicios</div>
+        <h2 class="section-title">Áreas de Especialización</h2>
+        <p class="section-subtitle">
+          Soluciones de ingeniería civil de alto nivel adaptadas a las
+          necesidades de cada proyecto.
         </p>
-        <p>
-          A lo largo de mi trayectoría he participado en proyectos residenciales, comerciales, industriales e infraestructura pública, trabajando siempre bajo estrictos estándares de seguridad y normativas vigentes. Creo firmemente que una buena estructura es aquella que no se ve pero que sostiene todo con absoluta confiabilidad.
-        </p>
-        <p>
-          Mi especialidad está en el diseño de estructuras de concreto armado y acero, análisis sismorresistente, y optimización de materiales para lograr soluciones que equilibran seguridad, economía y sostenibilidad.
-        </p>
       </div>
-      <!-- IMAGEN 2: Foto profesional del ingeniero (retrato, uniforme de obra o en oficina con planos) -->
-      <div class="about-image-wrap fade-in">
-        <div class="img-slot about-img" data-img="2">
-          <img src="images/sobre-mi.webp" alt="Jorge Hurtado — Ingeniero Civil" >
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-divider"><hr></div>
-
-  <!-- SERVICES -->
-  <section class="section" id="servicios">
-    <div class="section-header fade-in">
-      <div class="section-label">Servicios</div>
-      <h2 class="section-title">Áreas de Especialización</h2>
-      <p class="section-subtitle">Soluciones de ingeniería civil de alto nivel adaptadas a las necesidades de cada proyecto.</p>
-    </div>
-    <div class="services-grid">
-
-      <!-- IMAGEN 3 -->
-      <div class="service-card fade-in">
-        <div class="img-slot service-img" data-img="3">
-          <img src="images/diseño-estructural.webp" alt="Diseño Estructural" loading="lazy">
-        </div>
-        <div class="service-number">01</div>
-        <h3 class="service-title">Diseño Estructural</h3>
-        <p class="service-desc">Cálculo y diseño de estructuras de concreto armado y acero para edificaciones residenciales, comerciales e industriales. Análisis sismorresistente según norma E.030.</p>
-        <div class="service-tags">
-          <span class="service-tag">Concreto Armado</span>
-          <span class="service-tag">Acero</span>
-          <span class="service-tag">Sismorresistente</span>
-        </div>
-      </div>
-
-      <!-- IMAGEN 4 -->
-      <div class="service-card fade-in">
-        <div class="img-slot service-img" data-img="4">
-          <img src="images/Supervisión-de-Obra.webp" alt="Supervisión de Obra" loading="lazy">
-        </div>
-        <div class="service-number">02</div>
-        <h3 class="service-title">Supervisión de Obra</h3>
-        <p class="service-desc">Control y vigilancia técnica de la ejecución de obras, asegurando el cumplimiento de especificaciones, planos y normativas vigentes en cada etapa.</p>
-        <div class="service-tags">
-          <span class="service-tag">Control de Calidad</span>
-          <span class="service-tag">Supervisión</span>
-          <span class="service-tag">Normativa</span>
-        </div>
-      </div>
-
-      <!-- IMAGEN 5 -->
-      <div class="service-card fade-in">
-        <div class="img-slot service-img" data-img="5">
-          <img src="images/Estudios-de-Suelo.webp" alt="Estudios de Suelo" loading="lazy">
-        </div>
-        <div class="service-number">03</div>
-        <h3 class="service-title">Estudios de Suelo</h3>
-        <p class="service-desc">Interpretación de investigaciones geotécnicas y diseño de cimentaciones adecuadas para cada tipo de terreno y carga estructural.</p>
-        <div class="service-tags">
-          <span class="service-tag">Geotecnia</span>
-          <span class="service-tag">Cimentaciones</span>
-          <span class="service-tag">Mecánica de Suelos</span>
-        </div>
-      </div>
-
-      <!-- IMAGEN 6 -->
-      <div class="service-card fade-in">
-        <div class="img-slot service-img" data-img="6">
-          <img src="images/Consultoría-Técnica.webp" alt="Consultoría Técnica" loading="lazy">
-        </div>
-        <div class="service-number">04</div>
-        <h3 class="service-title">Consultoría Técnica</h3>
-        <p class="service-desc">Peritajes estructurales, evaluación de edificaciones existentes, dictámenes técnicos y asesoría para remodelaciones o refuerzo estructural.</p>
-        <div class="service-tags">
-          <span class="service-tag">Peritaje</span>
-          <span class="service-tag">Evaluación</span>
-          <span class="service-tag">Refuerzo</span>
-        </div>
-      </div>
-
-      <!-- IMAGEN 7 -->
-      <div class="service-card fade-in">
-        <div class="img-slot service-img" data-img="7">
-          <img src="images/Infraestructura-Vial.webp" alt="Infraestructura Vial" loading="lazy">
-        </div>
-        <div class="service-number">05</div>
-        <h3 class="service-title">Infraestructura Vial</h3>
-        <p class="service-desc">Diseño de pavimentos, estudio y diseño de drenaje pluvial, trazado de vías y obras de arte menor para proyectos viales.</p>
-        <div class="service-tags">
-          <span class="service-tag">Pavimentos</span>
-          <span class="service-tag">Drenaje</span>
-          <span class="service-tag">Vialidad</span>
-        </div>
-      </div>
-
-      <!-- IMAGEN 8 -->
-      <div class="service-card fade-in">
-        <div class="img-slot service-img" data-img="8">
-          <img src="images/tipografia-y-geometria.webp" alt="Topografía y Geometría" loading="lazy">
-        </div>
-        <div class="service-number">06</div>
-        <h3 class="service-title">Topografía y Geometría</h3>
-        <p class="service-desc">Levantamientos topográficos, replanteo de obras, control de volúmenes de tierra y verificación geométrica durante la construcción.</p>
-        <div class="service-tags">
-          <span class="service-tag">Topografía</span>
-          <span class="service-tag">Replanteo</span>
-          <span class="service-tag">Volumetría</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <div class="section-divider"><hr></div>
-
-  <!-- PROYECTOS DESTACADOS -->
-  <section class="section" id="proyectos">
-    <div class="section-header fade-in">
-      <div class="section-label">Portafolio</div>
-      <h2 class="section-title">Proyectos Destacados</h2>
-      <p class="section-subtitle">Una selección de obras que reflejan mi compromiso con la ingeniería de calidad.</p>
-    </div>
-    <div class="projects-grid">
-
-      <!-- IMAGEN 9 -->
-      <div class="project-card fade-in">
-        <div class="img-slot project-img" data-img="9">
-          <span class="img-slot-label">IMAGEN 9 — Proyecto 1 (800×600)</span>
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">Edificio Residencial Torres del Parque</h3>
-          <p class="project-desc">Diseño estructural de edificio de 15 niveles. Estructura de concreto armado con sistema de ductilidad controlada. Lima, Perú.</p>
-          <div class="project-tags">
-            <span class="service-tag">15 Niveles</span>
+      <div class="services-grid">
+        <!-- IMAGEN 3 -->
+        <div class="service-card fade-in">
+          <div class="img-slot service-img" data-img="3">
+            <img
+              src="images/diseño-estructural.webp"
+              alt="Diseño Estructural"
+              loading="lazy"
+            />
+          </div>
+          <div class="service-number">01</div>
+          <h3 class="service-title">Diseño Estructural</h3>
+          <p class="service-desc">
+            Cálculo y diseño de estructuras de concreto armado y acero para
+            edificaciones residenciales, comerciales e industriales. Análisis
+            sismorresistente según norma E.030.
+          </p>
+          <div class="service-tags">
             <span class="service-tag">Concreto Armado</span>
+            <span class="service-tag">Acero</span>
             <span class="service-tag">Sismorresistente</span>
           </div>
         </div>
-      </div>
 
-      <!-- IMAGEN 10 -->
-      <div class="project-card fade-in">
-        <div class="img-slot project-img" data-img="10">
-          <span class="img-slot-label">IMAGEN 10 — Proyecto 2 (800×600)</span>
+        <!-- IMAGEN 4 -->
+        <div class="service-card fade-in">
+          <div class="img-slot service-img" data-img="4">
+            <img
+              src="images/Supervisión-de-Obra.webp"
+              alt="Supervisión de Obra"
+              loading="lazy"
+            />
+          </div>
+          <div class="service-number">02</div>
+          <h3 class="service-title">Supervisión de Obra</h3>
+          <p class="service-desc">
+            Control y vigilancia técnica de la ejecución de obras, asegurando el
+            cumplimiento de especificaciones, planos y normativas vigentes en
+            cada etapa.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Control de Calidad</span>
+            <span class="service-tag">Supervisión</span>
+            <span class="service-tag">Normativa</span>
+          </div>
         </div>
-        <div class="project-info">
-          <h3 class="project-title">Centro Comercial Plaza Viva</h3>
-          <p class="project-desc">Estructura de acero y concreto para local comercial de 8,000 m². Incluye estacionamiento subterráneo de 2 niveles.</p>
-          <div class="project-tags">
-            <span class="service-tag">Comercial</span>
-            <span class="service-tag">Acero</span>
-            <span class="service-tag">Subterráneo</span>
+
+        <!-- IMAGEN 5 -->
+        <div class="service-card fade-in">
+          <div class="img-slot service-img" data-img="5">
+            <img
+              src="images/Estudios-de-Suelo.webp"
+              alt="Estudios de Suelo"
+              loading="lazy"
+            />
+          </div>
+          <div class="service-number">03</div>
+          <h3 class="service-title">Estudios de Suelo</h3>
+          <p class="service-desc">
+            Interpretación de investigaciones geotécnicas y diseño de
+            cimentaciones adecuadas para cada tipo de terreno y carga
+            estructural.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Geotecnia</span>
+            <span class="service-tag">Cimentaciones</span>
+            <span class="service-tag">Mecánica de Suelos</span>
+          </div>
+        </div>
+
+        <!-- IMAGEN 6 -->
+        <div class="service-card fade-in">
+          <div class="img-slot service-img" data-img="6">
+            <img
+              src="images/Consultoría-Técnica.webp"
+              alt="Consultoría Técnica"
+              loading="lazy"
+            />
+          </div>
+          <div class="service-number">04</div>
+          <h3 class="service-title">Consultoría Técnica</h3>
+          <p class="service-desc">
+            Peritajes estructurales, evaluación de edificaciones existentes,
+            dictámenes técnicos y asesoría para remodelaciones o refuerzo
+            estructural.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Peritaje</span>
+            <span class="service-tag">Evaluación</span>
+            <span class="service-tag">Refuerzo</span>
+          </div>
+        </div>
+
+        <!-- IMAGEN 7 -->
+        <div class="service-card fade-in">
+          <div class="img-slot service-img" data-img="7">
+            <img
+              src="images/Infraestructura-Vial.webp"
+              alt="Infraestructura Vial"
+              loading="lazy"
+            />
+          </div>
+          <div class="service-number">05</div>
+          <h3 class="service-title">Infraestructura Vial</h3>
+          <p class="service-desc">
+            Diseño de pavimentos, estudio y diseño de drenaje pluvial, trazado
+            de vías y obras de arte menor para proyectos viales.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Pavimentos</span>
+            <span class="service-tag">Drenaje</span>
+            <span class="service-tag">Vialidad</span>
+          </div>
+        </div>
+
+        <!-- IMAGEN 8 -->
+        <div class="service-card fade-in">
+          <div class="img-slot service-img" data-img="8">
+            <img
+              src="images/tipografia-y-geometria.webp"
+              alt="Topografía y Geometría"
+              loading="lazy"
+            />
+          </div>
+          <div class="service-number">06</div>
+          <h3 class="service-title">Topografía y Geometría</h3>
+          <p class="service-desc">
+            Levantamientos topográficos, replanteo de obras, control de
+            volúmenes de tierra y verificación geométrica durante la
+            construcción.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Topografía</span>
+            <span class="service-tag">Replanteo</span>
+            <span class="service-tag">Volumetría</span>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- IMAGEN 11 -->
-      <div class="project-card fade-in">
-        <div class="img-slot project-img" data-img="11">
-          <span class="img-slot-label">IMAGEN 11 — Proyecto 3 (800×600)</span>
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">Puente Vehicular Río Rímac</h3>
-          <p class="project-desc">Diseño y supervisión de puente de concreto pretensado de 120m de luz. Infraestructura vial de alto tránsito.</p>
-          <div class="project-tags">
-            <span class="service-tag">Puentes</span>
-            <span class="service-tag">Pretensado</span>
-            <span class="service-tag">Vial</span>
-          </div>
-        </div>
-      </div>
+    <div class="section-divider"><hr /></div>
 
-      <!-- IMAGEN 12 -->
-      <div class="project-card fade-in">
-        <div class="img-slot project-img" data-img="12">
-          <span class="img-slot-label">IMAGEN 12 — Proyecto 4 (800×600)</span>
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">Conjunto Habitacional Villa Esperanza</h3>
-          <p class="project-desc">Diseño estructural de 200 viviendas de interés social. Optimización de costos sin comprometer la seguridad.</p>
-          <div class="project-tags">
-            <span class="service-tag">Residencial</span>
-            <span class="service-tag">200 Viviendas</span>
-            <span class="service-tag">Optimización</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <div class="section-divider"><hr></div>
-
-  <!-- EXPERIENCE -->
-  <section class="section" id="experiencia">
-    <div class="section-header fade-in">
-      <div class="section-label">Trayectoria</div>
-      <h2 class="section-title">Experiencia Profesional</h2>
-      <p class="section-subtitle">Una carrera construida sobre obras reales y estructuras que se mantienen en pie.</p>
-    </div>
-    <div class="experience-container">
-      <div class="experience-timeline">
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2021 — Presente</div>
-          <h3 class="timeline-role">Ingeniero Civil Senior / Jefe de Diseño</h3>
-          <div class="timeline-company">Consultora de Ingeniería — Lima, Perú</div>
-          <p class="timeline-desc">
-            Liderazgo del departamento de diseño estructural. Responsable del cálculo y revisión de estructuras para edificaciones de hasta 25 niveles. Reducción del 20% en consumo de acero mediante optimización de diseños.
-          </p>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2018 — 2021</div>
-          <h3 class="timeline-role">Ingeniero de Proyectos</h3>
-          <div class="timeline-company">Constructora Nacional — Lima, Perú</div>
-          <p class="timeline-desc">
-            Supervisión y diseño estructural de proyectos residenciales y comerciales. Coordinación con equipos multidisciplinarios (arquitectura, instalaciones, geotecnia). Gestión de presupuestos y cronogramas de diseño.
-          </p>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2016 — 2018</div>
-          <h3 class="timeline-role">Ingeniero Estructural</h3>
-          <div class="timeline-company">Estudio de Diseño Estructural — Arequipa</div>
-          <p class="timeline-desc">
-            Cálculo y diseño de estructuras de concreto armado y acero. Elaboración de planos estructurales y especificaciones técnicas. Participación en más de 30 proyectos de diversas escalas.
-          </p>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2014 — 2016</div>
-          <h3 class="timeline-role">Ingeniero de Campo / Residente de Obra</h3>
-          <div class="timeline-company">Empresa Constructora — Cusco</div>
-          <p class="timeline-desc">
-            Dirección técnica en sitio de obras civiles. Control de calidad, replanteo, supervisión de cuadrillas y aseguramiento del cumplimiento de especificaciones técnicas en campo.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-divider"><hr></div>
-
-  <!-- SKILLS -->
-  <section class="section" id="habilidades">
-    <div class="section-header fade-in">
-      <div class="section-label">Competencias</div>
-      <h2 class="section-title">Habilidades Técnicas</h2>
-      <p class="section-subtitle">Dominio técnico construido sobre años de práctica en proyectos reales de construcción.</p>
-    </div>
-    <div class="skills-container">
-      <div class="skills-grid fade-in">
-        <div>
-          <div class="skill-group-title">Software Estructural</div>
-          <div class="skill-item"><span class="skill-name">SAP2000</span><span class="skill-level">Experto</span></div>
-          <div class="skill-item"><span class="skill-name">ETABS</span><span class="skill-level">Experto</span></div>
-          <div class="skill-item"><span class="skill-name">SAFE</span><span class="skill-level">Avanzado</span></div>
-          <div class="skill-item"><span class="skill-name">RAM Structural System</span><span class="skill-level">Avanzado</span></div>
-          <div class="skill-item"><span class="skill-name">MIDAS Gen</span><span class="skill-level">Intermedio</span></div>
-        </div>
-        <div>
-          <div class="skill-group-title">Diseño y Cálculo</div>
-          <div class="skill-item"><span class="skill-name">Concreto Armado (ACI 318)</span><span class="skill-level">Experto</span></div>
-          <div class="skill-item"><span class="skill-name">Acero (AISC 360)</span><span class="skill-level">Experto</span></div>
-          <div class="skill-item"><span class="skill-name">Norma E.030 Sismorresistente</span><span class="skill-level">Experto</span></div>
-          <div class="skill-item"><span class="skill-name">Geotecnia y Cimentaciones</span><span class="skill-level">Avanzado</span></div>
-          <div class="skill-item"><span class="skill-name">Pretensado y Postensado</span><span class="skill-level">Avanzado</span></div>
-        </div>
-        <div>
-          <div class="skill-group-title">Planificación y Supervisión</div>
-          <div class="skill-item"><span class="skill-name">AutoCAD / AutoCAD Civil 3D</span><span class="skill-level">Experto</span></div>
-          <div class="skill-item"><span class="skill-name">Microsoft Project</span><span class="skill-level">Avanzado</span></div>
-          <div class="skill-item"><span class="skill-name">Control de Costos de Obra</span><span class="skill-level">Avanzado</span></div>
-          <div class="skill-item"><span class="skill-name">Topografía (Total Station)</span><span class="skill-level">Avanzado</span></div>
-          <div class="skill-item"><span class="skill-name">Normativa Nacional (Reglamento Nacional de Edificaciones)</span><span class="skill-level">Experto</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-divider"><hr></div>
-
-  <!-- CONTACT -->
-  <section class="section" id="contacto">
-    <div class="section-header fade-in">
-      <div class="section-label">Contacto</div>
-      <h2 class="section-title">Trabajemos juntos</h2>
-      <p class="section-subtitle">¿Tiene un proyecto que necesita excelencia en ingeniería? Conversemos.</p>
-    </div>
-    <div class="contact-container">
-      <div class="contact-info fade-in">
-        <h3>Hablemos</h3>
-        <p>
-          Estoy disponible para consultoría, diseño estructural, supervisión de obra y peritajes técnicos. Cada conversación comienza con la misma pregunta: ¿cuál es el problema que necesita resolver?
+    <!-- PROYECTOS DESTACADOS -->
+    <section class="section" id="proyectos">
+      <div class="section-header fade-in">
+        <div class="section-label">Portafolio</div>
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-subtitle">
+          Una selección de obras que reflejan mi compromiso con la ingeniería de
+          calidad.
         </p>
-        <div class="contact-links">
-          <a href="mailto:jorge@jorgehurtado.dev" class="contact-link">
-            <div class="contact-link-icon">✉</div>
-            <span>jorge@jorgehurtado.dev</span>
-          </a>
-          <a href="https://linkedin.com/in/jorgehurtado" target="_blank" class="contact-link">
-            <div class="contact-link-icon">in</div>
-            <span>linkedin.com/in/jorgehurtado</span>
-          </a>
-          <a href="https://wa.me/51999999999" target="_blank" class="contact-link">
-            <div class="contact-link-icon">✆</div>
-            <span>+51 999 999 999</span>
-          </a>
-          <a href="https://twitter.com/jorgehurtado" target="_blank" class="contact-link">
-            <div class="contact-link-icon">𝕏</div>
-            <span>@jorgehurtado</span>
-          </a>
-        </div>
       </div>
-      <form class="contact-form fade-in" onsubmit="handleSubmit(event)">
-        <div class="form-group">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
-        </div>
-        <div class="form-group">
-          <label for="email">Correo Electrónico</label>
-          <input type="email" id="email" name="email" required placeholder="tu@correo.com">
-        </div>
-        <div class="form-group">
-          <label for="project">Tipo de Proyecto</label>
-          <input type="text" id="project" name="project" placeholder="Ej: Edificación residencial, supervisión de obra...">
-        </div>
-        <div class="form-group">
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Enviar Mensaje</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div>
-          <div class="footer-brand">Jorge Hurtado</div>
-          <div class="footer-tagline">Ingeniero Civil Senior — Diseño Estructural, Supervisión de Obra y Consultoría</div>
-        </div>
-        <div class="footer-nav">
-          <div class="footer-col">
-            <div class="footer-col-title">Navegación</div>
-            <ul>
-              <li><a href="#sobre-mi">Sobre Mí</a></li>
-              <li><a href="#servicios">Servicios</a></li>
-              <li><a href="#proyectos">Proyectos</a></li>
-              <li><a href="#experiencia">Experiencia</a></li>
-              <li><a href="#habilidades">Habilidades</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-            </ul>
+      <div class="projects-grid">
+        <!-- IMAGEN 9 -->
+        <div class="project-card fade-in">
+          <div class="img-slot project-img" data-img="9">
+            <span class="img-slot-label">IMAGEN 9 — Proyecto 1 (800×600)</span>
           </div>
-          <div class="footer-col">
-            <div class="footer-col-title">Legal</div>
-            <ul>
-              <li><a href="privacidad.html">Política de Privacidad</a></li>
-              <li><a href="terminos.html">Términos y Condiciones</a></li>
-              <li><a href="reembolsos.html">Política de Reembolsos</a></li>
-            </ul>
+          <div class="project-info">
+            <h3 class="project-title">
+              Edificio Residencial Torres del Parque
+            </h3>
+            <p class="project-desc">
+              Diseño estructural de edificio de 15 niveles. Estructura de
+              concreto armado con sistema de ductilidad controlada. Lima, Perú.
+            </p>
+            <div class="project-tags">
+              <span class="service-tag">15 Niveles</span>
+              <span class="service-tag">Concreto Armado</span>
+              <span class="service-tag">Sismorresistente</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-copy">© 2026 Jorge Hurtado. Todos los derechos reservados.</div>
-        <div class="footer-legal">
-          <a href="privacidad.html">Privacidad</a>
-          <a href="terminos.html">Términos</a>
-          <a href="reembolsos.html">Reembolsos</a>
+
+        <!-- IMAGEN 10 -->
+        <div class="project-card fade-in">
+          <div class="img-slot project-img" data-img="10">
+            <span class="img-slot-label">IMAGEN 10 — Proyecto 2 (800×600)</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Centro Comercial Plaza Viva</h3>
+            <p class="project-desc">
+              Estructura de acero y concreto para local comercial de 8,000 m².
+              Incluye estacionamiento subterráneo de 2 niveles.
+            </p>
+            <div class="project-tags">
+              <span class="service-tag">Comercial</span>
+              <span class="service-tag">Acero</span>
+              <span class="service-tag">Subterráneo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMAGEN 11 -->
+        <div class="project-card fade-in">
+          <div class="img-slot project-img" data-img="11">
+            <span class="img-slot-label">IMAGEN 11 — Proyecto 3 (800×600)</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Puente Vehicular Río Rímac</h3>
+            <p class="project-desc">
+              Diseño y supervisión de puente de concreto pretensado de 120m de
+              luz. Infraestructura vial de alto tránsito.
+            </p>
+            <div class="project-tags">
+              <span class="service-tag">Puentes</span>
+              <span class="service-tag">Pretensado</span>
+              <span class="service-tag">Vial</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMAGEN 12 -->
+        <div class="project-card fade-in">
+          <div class="img-slot project-img" data-img="12">
+            <span class="img-slot-label">IMAGEN 12 — Proyecto 4 (800×600)</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Conjunto Habitacional Villa Esperanza</h3>
+            <p class="project-desc">
+              Diseño estructural de 200 viviendas de interés social.
+              Optimización de costos sin comprometer la seguridad.
+            </p>
+            <div class="project-tags">
+              <span class="service-tag">Residencial</span>
+              <span class="service-tag">200 Viviendas</span>
+              <span class="service-tag">Optimización</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script>
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 50);
-    });
+    <div class="section-divider"><hr /></div>
 
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
-    function closeNav() { navLinks.classList.remove('active'); }
+    <!-- EXPERIENCE -->
+    <section class="section" id="experiencia">
+      <div class="section-header fade-in">
+        <div class="section-label">Trayectoria</div>
+        <h2 class="section-title">Experiencia Profesional</h2>
+        <p class="section-subtitle">
+          Una carrera construida sobre obras reales y estructuras que se
+          mantienen en pie.
+        </p>
+      </div>
+      <div class="experience-container">
+        <div class="experience-timeline">
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021 — Presente</div>
+            <h3 class="timeline-role">
+              Ingeniero Civil Senior / Jefe de Diseño
+            </h3>
+            <div class="timeline-company">
+              Consultora de Ingeniería — Lima, Perú
+            </div>
+            <p class="timeline-desc">
+              Liderazgo del departamento de diseño estructural. Responsable del
+              cálculo y revisión de estructuras para edificaciones de hasta 25
+              niveles. Reducción del 20% en consumo de acero mediante
+              optimización de diseños.
+            </p>
+          </div>
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2018 — 2021</div>
+            <h3 class="timeline-role">Ingeniero de Proyectos</h3>
+            <div class="timeline-company">
+              Constructora Nacional — Lima, Perú
+            </div>
+            <p class="timeline-desc">
+              Supervisión y diseño estructural de proyectos residenciales y
+              comerciales. Coordinación con equipos multidisciplinarios
+              (arquitectura, instalaciones, geotecnia). Gestión de presupuestos
+              y cronogramas de diseño.
+            </p>
+          </div>
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2016 — 2018</div>
+            <h3 class="timeline-role">Ingeniero Estructural</h3>
+            <div class="timeline-company">
+              Estudio de Diseño Estructural — Arequipa
+            </div>
+            <p class="timeline-desc">
+              Cálculo y diseño de estructuras de concreto armado y acero.
+              Elaboración de planos estructurales y especificaciones técnicas.
+              Participación en más de 30 proyectos de diversas escalas.
+            </p>
+          </div>
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2014 — 2016</div>
+            <h3 class="timeline-role">
+              Ingeniero de Campo / Residente de Obra
+            </h3>
+            <div class="timeline-company">Empresa Constructora — Cusco</div>
+            <p class="timeline-desc">
+              Dirección técnica en sitio de obras civiles. Control de calidad,
+              replanteo, supervisión de cuadrillas y aseguramiento del
+              cumplimiento de especificaciones técnicas en campo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
+    <div class="section-divider"><hr /></div>
+
+    <!-- SKILLS -->
+    <section class="section" id="habilidades">
+      <div class="section-header fade-in">
+        <div class="section-label">Competencias</div>
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        <p class="section-subtitle">
+          Dominio técnico construido sobre años de práctica en proyectos reales
+          de construcción.
+        </p>
+      </div>
+      <div class="skills-container">
+        <div class="skills-grid fade-in">
+          <div>
+            <div class="skill-group-title">Software Estructural</div>
+            <div class="skill-item">
+              <span class="skill-name">SAP2000</span
+              ><span class="skill-level">Experto</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">ETABS</span
+              ><span class="skill-level">Experto</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SAFE</span
+              ><span class="skill-level">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">RAM Structural System</span
+              ><span class="skill-level">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MIDAS Gen</span
+              ><span class="skill-level">Intermedio</span>
+            </div>
+          </div>
+          <div>
+            <div class="skill-group-title">Diseño y Cálculo</div>
+            <div class="skill-item">
+              <span class="skill-name">Concreto Armado (ACI 318)</span
+              ><span class="skill-level">Experto</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Acero (AISC 360)</span
+              ><span class="skill-level">Experto</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Norma E.030 Sismorresistente</span
+              ><span class="skill-level">Experto</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Geotecnia y Cimentaciones</span
+              ><span class="skill-level">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Pretensado y Postensado</span
+              ><span class="skill-level">Avanzado</span>
+            </div>
+          </div>
+          <div>
+            <div class="skill-group-title">Planificación y Supervisión</div>
+            <div class="skill-item">
+              <span class="skill-name">AutoCAD / AutoCAD Civil 3D</span
+              ><span class="skill-level">Experto</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Microsoft Project</span
+              ><span class="skill-level">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Control de Costos de Obra</span
+              ><span class="skill-level">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Topografía (Total Station)</span
+              ><span class="skill-level">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name"
+                >Normativa Nacional (Reglamento Nacional de Edificaciones)</span
+              ><span class="skill-level">Experto</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><hr /></div>
+
+    <!-- CONTACT -->
+    <section class="section" id="contacto">
+      <div class="section-header fade-in">
+        <div class="section-label">Contacto</div>
+        <h2 class="section-title">Trabajemos juntos</h2>
+        <p class="section-subtitle">
+          ¿Tiene un proyecto que necesita excelencia en ingeniería? Conversemos.
+        </p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info fade-in">
+          <h3>Hablemos</h3>
+          <p>
+            Estoy disponible para consultoría, diseño estructural, supervisión
+            de obra y peritajes técnicos. Cada conversación comienza con la
+            misma pregunta: ¿cuál es el problema que necesita resolver?
+          </p>
+          <div class="contact-links">
+            <a href="mailto:jorge@jorgehurtado.dev" class="contact-link">
+              <div class="contact-link-icon">✉</div>
+              <span>jorge@jorgehurtado.dev</span>
+            </a>
+            <a
+              href="https://linkedin.com/in/jorgehurtado"
+              target="_blank"
+              class="contact-link"
+            >
+              <div class="contact-link-icon">in</div>
+              <span>linkedin.com/in/jorgehurtado</span>
+            </a>
+            <a
+              href="https://wa.me/51999999999"
+              target="_blank"
+              class="contact-link"
+            >
+              <div class="contact-link-icon">✆</div>
+              <span>+51 999 999 999</span>
+            </a>
+            <a
+              href="https://twitter.com/jorgehurtado"
+              target="_blank"
+              class="contact-link"
+            >
+              <div class="contact-link-icon">𝕏</div>
+              <span>@jorgehurtado</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form fade-in" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Tu nombre completo"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="tu@correo.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="project">Tipo de Proyecto</label>
+            <input
+              type="text"
+              id="project"
+              name="project"
+              placeholder="Ej: Edificación residencial, supervisión de obra..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Cuéntame sobre tu proyecto..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="align-self: flex-start"
+          >
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div>
+            <div class="footer-brand">Jorge Hurtado</div>
+            <div class="footer-tagline">
+              Ingeniero Civil Senior — Diseño Estructural, Supervisión de Obra y
+              Consultoría
+            </div>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-col">
+              <div class="footer-col-title">Navegación</div>
+              <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <div class="footer-col-title">Legal</div>
+              <ul>
+                <li><a href="privacidad.html">Política de Privacidad</a></li>
+                <li><a href="terminos.html">Términos y Condiciones</a></li>
+                <li><a href="reembolsos.html">Política de Reembolsos</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-copy">
+            © 2026 Jorge Hurtado. Todos los derechos reservados.
+          </div>
+          <div class="footer-legal">
+            <a href="privacidad.html">Privacidad</a>
+            <a href="terminos.html">Términos</a>
+            <a href="reembolsos.html">Reembolsos</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const nav = document.getElementById("nav");
+      window.addEventListener("scroll", () => {
+        nav.classList.toggle("scrolled", window.scrollY > 50);
       });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    function handleSubmit(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('button[type="submit"]');
-      const original = btn.textContent;
-      btn.textContent = 'Mensaje Enviado ✓';
-      btn.style.background = '#2a6a3a';
-      btn.style.color = '#fff';
-      setTimeout(() => {
-        btn.textContent = original;
-        btn.style.background = '';
-        btn.style.color = '';
-        e.target.reset();
-      }, 3000);
-    }
-  </script>
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      navToggle.addEventListener("click", () =>
+        navLinks.classList.toggle("active"),
+      );
+      function closeNav() {
+        navLinks.classList.remove("active");
+      }
 
-</body>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".fade-in")
+        .forEach((el) => observer.observe(el));
+
+      function handleSubmit(e) {
+        e.preventDefault();
+        const btn = e.target.querySelector('button[type="submit"]');
+        const original = btn.textContent;
+        btn.textContent = "Mensaje Enviado ✓";
+        btn.style.background = "#2a6a3a";
+        btn.style.color = "#fff";
+        setTimeout(() => {
+          btn.textContent = original;
+          btn.style.background = "";
+          btn.style.color = "";
+          e.target.reset();
+        }, 3000);
+      }
+    </script>
+  </body>
 </html>

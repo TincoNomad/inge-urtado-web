@@ -372,7 +372,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .about-text p {
@@ -846,6 +846,7 @@ body {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 2.8rem);
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .legal-updated {
