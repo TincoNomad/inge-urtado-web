@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retirar Contenido — Jorge Hurtado</title>
+  <meta name="description" content="Solicita la retirada de contenido de expedientes técnicos adquiridos en Jorge Hurtado, Ingeniero Civil Senior.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">JH.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="index.html#experiencia">Experiencia</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="legal-page">
+    <div class="legal-container">
+      <a href="index.html" class="legal-back">← Volver al Inicio</a>
+
+      <h1 class="legal-title">Retirar Contenido de Expedientes Técnicos</h1>
+      <div class="legal-updated">Solicitud de retiro de archivos de infoproductos</div>
+
+      <div class="legal-content">
+        <p>Si deseas que retiremos algún archivo de contenido de los infoproductos adquiridos, completa el siguiente formulario. Revisaremos tu solicitud y nos comunicaremos contigo por correo o WhatsApp.</p>
+
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleSubmit(event)" style="margin-top: 2rem;">
+          <input type="hidden" name="access_key" value="0cfcb793-e1e2-44a4-aaea-1705bb966cec">
+          <input type="hidden" name="subject" value="retirar contenido de expedientes tecnicos">
+          <input type="hidden" name="from_name" value="Retiro de Contenido">
+          <input type="hidden" name="replyto" id="replyto" value="">
+
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="whatsapp">Número de WhatsApp</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required placeholder="+51 999 999 999">
+          </div>
+
+          <div class="form-group">
+            <label for="archivo">Archivo que deseas retirar</label>
+            <input type="text" id="archivo" name="archivo" required placeholder="Nombre o identificación del archivo">
+          </div>
+
+          <div class="form-group">
+            <label for="motivo">Motivo de la solicitud</label>
+            <textarea id="motivo" name="motivo" required placeholder="Explica brevemente por qué solicitas el retiro del archivo..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+            Enviar Solicitud
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Jorge Hurtado. Todos los derechos reservados.</div>
+        <div class="footer-legal">
+          <a href="privacidad.html">Privacidad</a>
+          <a href="terminos.html">Términos</a>
+          <a href="reembolsos.html">Reembolsos</a>
+          <a href="retirar-contenido.html">Retirar Contenido</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6-UUeUOH3_AMlY1svMd2LR1To4y-ToUEbB1d33BlJ3AC2iQ/viewform?usp=sharing&ouid=113939090749411451993" target="_blank">Libro de Reclamaciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+
+    async function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button[type="submit"]');
+      const original = btn.textContent;
+      form.replyto.value = form.email.value;
+      btn.textContent = 'Enviando...';
+      btn.disabled = true;
+
+      try {
+        const formData = new FormData(form);
+        const resp = await fetch(form.action, { method: 'POST', body: formData });
+        const data = await resp.json();
+
+        if (data.success) {
+          btn.textContent = 'Solicitud Enviada ✓';
+          btn.style.background = '#2a6a3a';
+          form.reset();
+        } else {
+          btn.textContent = 'Error, intenta de nuevo';
+          btn.style.background = '#8b1a1a';
+        }
+      } catch {
+        btn.textContent = 'Error de conexión';
+        btn.style.background = '#8b1a1a';
+      }
+
+      btn.disabled = false;
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.style.background = '';
+      }, 4000);
+    }
+  </script>
+
+</body>
+</html>
